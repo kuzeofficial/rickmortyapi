@@ -7,7 +7,7 @@ const client = new ApolloClient({
     cache: new InMemoryCache()
 });
 
-export default async (req, res) => {
+export default async (req:any, res:any) => {
     const search = req.body;
     try {
         const {data} = await client.query({

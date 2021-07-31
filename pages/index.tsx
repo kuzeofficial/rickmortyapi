@@ -7,9 +7,9 @@ import Character from "../components/characters"
 
 import {SearchIcon, CloseIcon} from "@chakra-ui/icons"
 
-export default function Home(results) {
+export default function Home(results : any) {
   const initialState = results;
-  const [characters:any, setCharacters] = useState(initialState.characters);
+  const [characters, setCharacters] = useState(initialState.characters);
   const [search, setSearch] = useState("")
   const toast = useToast()
   return (
