@@ -9,7 +9,7 @@ import {SearchIcon, CloseIcon} from "@chakra-ui/icons"
 
 export default function Home(results) {
   const initialState = results;
-  const [characters, setCharacters] = useState(initialState.characters);
+  const [characters:any, setCharacters] = useState(initialState.characters);
   const [search, setSearch] = useState("")
   const toast = useToast()
   return (
